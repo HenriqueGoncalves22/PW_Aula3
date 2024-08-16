@@ -14,6 +14,8 @@ public class Main {
         meuLivro.resumo = "É um bruxo...";
         meuLivro.tipoCapa = "Comum";
         meuLivro.valor = 35.99;
+        meuLivro.exibirDadosLivro();
+
         System.out.println(meuLivro.titulo + " escrito por " + meuLivro.autor + " custa " + meuLivro.valor + "\nPublicado por:" + meuLivro.editora.nome);
         Livro melhorLivro = new Livro();
         melhorLivro.titulo = "O Príncipe - Edição de Luxo";
@@ -27,5 +29,7 @@ public class Main {
                 + "Resumo: \n" + melhorLivro.resumo);
         System.out.println("\n" +" Distribuída por " + Lafonte.nome +  "\n" + " Contato: " +  Lafonte.email + "\n"
                 + " Visite a editora em: " + Lafonte.site);
+        melhorLivro.exibirDadosLivro();
     }
+
 }
